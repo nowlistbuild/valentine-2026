@@ -117,10 +117,12 @@
     }
 
     .fireworks {
-      width: min(380px, 90vw);
-      margin: 0 auto;
-      display: block;
-    }
+  width: min(200px, 60vw);  /* Smaller size */
+  max-height: 200px;        /* Limit height */
+  object-fit: contain;      /* Keep proportions */
+  margin: 0 auto;
+  display: block;
+}
 
     @keyframes pop {
       from { transform: scale(.96); opacity: 0; }
